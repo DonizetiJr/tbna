@@ -86,6 +86,9 @@ hr {
   @media screen and (max-width: $break-large) {
     margin-top: 0em;
   }
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 75%;
+  }
   .letter-t {
     color: rgba($blue, .3);
     font-size: 105em;
