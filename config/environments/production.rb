@@ -27,7 +27,7 @@ Rails.application.configure do
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
-  config.assetes.cache_store = :memory_store
+  config.assetes.cache_store = :memory_store { size: 64.megabytes }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = 'https://guarded-earth-80900.herokuapp.com/'
