@@ -30,9 +30,9 @@ body {
 
 .landing-page {
   height: 100vh;
-  background-image: -webkit-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.1)),image-url("home-image.jpg");
-  background-image: -o-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.1)),image-url("home-image.jpg");
-  background-image: -moz-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.1)),image-url("home-image.jpg");
+  background-image: -webkit-linear-gradient(rgba($blue, 1),8%, rgba($blue, 0.1)),image-url("home-image.jpg");
+  background-image: -o-linear-gradient(rgba($blue, 1),8%, rgba($blue, 0.1)),image-url("home-image.jpg");
+  background-image: -moz-linear-gradient(rgba($blue, 1),8%, rgba($blue, 0.1)),image-url("home-image.jpg");
   background-image: linear-gradient(rgba($blue, 1),8%, rgba($blue, 0.1)),image-url("home-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
