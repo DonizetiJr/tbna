@@ -1,0 +1,82 @@
+$dark: #454552;
+$light: #d8e9ef;
+$blue: #6AAFE6;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-medium: 960px;
+$break-small: 620px;
+
+
+.front-scroll {
+  background-color: transparent;
+  height: 100vh;
+  position: relative;
+
+  transition: all .2s ease-in-out;
+}
+
+.fade-in-active {
+  background-color: white;
+
+  transition: all .2s ease-in-out;
+}
+
+body {
+  overflow: auto;
+}
+
+.landing-page {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.3)),image-url("home-image.jpg");
+  background-image: -o-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.3)),image-url("home-image.jpg");
+  background-image: -moz-linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.3)),image-url("home-image.jpg");
+  background-image: linear-gradient(rgba($blue, 1),4%, rgba($blue, 0.3)),image-url("home-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+  @media only screen and (max-width: $break-medium) {
+    background-attachment: scroll;
+  }
+  .landing-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: calc((30px - 680px * .10185) + 10.18519vw);
+    margin: 10% 15% 5% 15%;
+    color: rgba($white, .7);
+    opacity: .8;
+
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    @media screen and (max-width: $break-medium) {
+      font-size: calc((60px - 400px * .10185) + 10.18519vw);
+      margin-top: 20%;
+
+      -webkit-animation-delay: 1.8s;
+      animation-delay: 1.8s;
+
+    }
+  }
+  .subtitle {
+    color: $white;
+    font-weight: lighter;
+    text-align: center;
+
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    @media screen and (max-width: $break-medium) {
+      font-size: 1.1em;
+      margin: 1.3em;
+
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s;
+
+    }
+  }
+}

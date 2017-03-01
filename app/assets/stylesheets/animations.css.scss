@@ -1,0 +1,348 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+@-webkit-keyframes slideOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
+// Menu animations //
+
+@-webkit-keyframes openingMenu {
+  0% {
+    border-radius: 5px;
+  }
+  50% {
+    border-radius: 5px;
+    height: 5em;
+    width: 75%;
+  }
+
+  100% {
+    border-radius: 5px;
+    height: 40vh;
+    width: 75%;
+  }
+}
+
+@keyframes openingMenu {
+  0% {
+    border-radius: 5px;
+  }
+  50% {
+    border-radius: 5px;
+    height: 5em;
+    width: 75%;
+  }
+
+  100% {
+    border-radius: 5px;
+    height: 40vh;
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes closingMenu {
+  0% {
+    border-radius: 5px;
+    height: 40vh;
+    width: 75%;
+  }
+  50% {
+    border-radius: 5px;
+    height: 5em;
+    width: 75%;
+  }
+
+  100% {
+    border-radius: 100% 0 0 0;
+    width: 5em;
+    height: 5em;
+  }
+}
+
+@keyframes closingMenu {
+  0% {
+    border-radius: 5px;
+    height: 40vh;
+    width: 75%;
+  }
+  50% {
+    border-radius: 5px;
+    height: 5em;
+    width: 75%;
+  }
+
+  100% {
+    border-radius: 100% 0 0 0;
+    width: 5em;
+    height: 5em;
+  }
+}
+
+
+// Stick animations //
+
+@-webkit-keyframes rise {
+  50% { transform:rotate(30deg);
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+    ;}
+  }
+@-moz-keyframes rise {
+  50% { transform:rotate(30deg);
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+  }
+}
+@-o-keyframes rise {
+  50% { transform:rotate(30deg);
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+  }
+@keyframes rise {
+  50% { transform:rotate(30deg);
+    -ms-transform:rotate(30deg); /* IE 9 */
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+  }
+}}
+
+@-webkit-keyframes fall {
+  50% { transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* IE 9 */
+    -webkit-transform:rotate(-30deg);
+    -moz-transform:rotate(30deg);
+  }
+}
+@-moz-keyframes fall {
+  50% { transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* IE 9 */
+    -webkit-transform:rotate(-30deg);
+    -moz-transform:rotate(-30deg);
+
+  }
+}
+@-o-keyframes fall {
+  50% { transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* IE 9 */
+    -webkit-transform:rotate(-30deg);
+    -moz-transform:rotate(30deg);
+
+  }
+  @keyframes fall {
+    50% { transform:rotate(-30deg);
+      -ms-transform:rotate(-30deg); /* IE 9 */
+      -webkit-transform:rotate(-30deg);
+      -moz-transform:rotate(30deg);
+
+    }
+  }}
+
+@-webkit-keyframes fade {
+  50%{opacity:0.5}
+  100%{opacity:1}
+  ;}
+  @-moz-keyframes fade {
+    50%{opacity:0.5}
+    100%{opacity:1}
+  }
+  @-o-keyframes fade {
+    50%{opacity:0.5}
+    100%{opacity:1}
+    @keyframes fade {
+      50%{opacity:0.5}
+      100%{opacity:1}
+    }}

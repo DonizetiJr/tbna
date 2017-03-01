@@ -1,0 +1,106 @@
+$dark: #454552;
+$light: #d8e9ef;
+$blue: #6AAFE6;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-medium: 960px;
+$break-small: 620px;
+
+$stick_color: #6AAFE6;
+$stick_length: 16px; //Changes length of all sticks
+
+
+@font-face {
+  font-family:'Raleway';
+  src: font-url('Raleway-Regular.ttf') format('truetype');
+  font-weight:500;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Raleway';
+  src: font-url('Raleway-Black.ttf') format('truetype');
+  font-weight:bold;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'InconsolataRegular';
+  src: font-url('InconsolataRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  @media screen and (min-width: $break-small) {
+    height: 70vh;
+  }
+}
+
+.vertical-line {
+  background-color: rgba(130, 130, 130, 0.16);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  z-index: -2;
+}
+
+.container-stick {
+  background-color: $white;
+  width:$stick_length*6;
+  padding: 5em;
+  margin:auto;
+  margin-bottom: 3em;
+  vertical-align: middle;
+
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+
+  @media screen and (max-width: $break-medium) {
+    opacity: 1;
+  }
+
+  .stick {
+    width: 80%;
+    margin-left: 10%;
+    height:5px;
+    border-radius: 10px;
+    background:rgba($stick_color, 0.6);
+    &:nth-child(n) {
+      transform:rotate(30deg);
+      -ms-transform:rotate(30deg); /* IE 9 */
+      -webkit-transform:rotate(30deg); /* Safari and Chrome */
+      -moz-transform:rotate(30deg);
+      -webkit-animation: fall 2s infinite;
+      -moz-animation: fall 2s infinite;
+    }
+    &:nth-child(2n) {
+      transform:rotate(-30deg);
+      -ms-transform:rotate(-30deg); /* IE 9 */
+      -webkit-transform:rotate(-30deg); /* Safari and Chrome */
+      -moz-transform:rotate(-30deg);
+      -webkit-animation: rise 2s infinite;
+      -moz-animation: rise 2s infinite;
+    }
+  }
+}
