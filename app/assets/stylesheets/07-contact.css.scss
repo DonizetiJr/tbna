@@ -12,19 +12,21 @@ $break-smallest: 320px;
 
 
 .contact {
-  height: 90vh;
+  height: 100vh;
   margin-top: 20vh;
+  padding-top: 2em;
+  background-image: linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
   @media screen and (max-width: $break-large) {
     margin-top: 30vh;
   }
   @media screen and (max-width: $break-small) {
     margin-top: 20vh;
   }
+  .title {
+    color: $white;
+    background-color: transparent;
+  }
   .contact-background {
-    background-image: linear-gradient(to left, rgba($light, .8), rgba($light, .8));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 65%;
     position: relative;
     @media screen and (max-width: $break-small) {
@@ -196,8 +198,9 @@ $break-smallest: 320px;
     }
   }
   .footer {
+    background-color: $white;
+    height: 20%;
     p {
-      background-color: $white;
       color: $dark;
       font-size: .85em;
       float: right;

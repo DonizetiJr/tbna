@@ -62,8 +62,12 @@ $( window ).ready(function() {
 
         var title = $(".landing-title").offset();
         var viewPortTitleTop = title.top - $(document).scrollTop() - 150;
+        var contactPosition = $('#contact').offset().top - $(window).scrollTop();
 
-        if (viewPortTitleTop < 0) {
+        if (contactPosition < 390) {
+          $('.cd-label').css("color","#fff");
+
+        } else if (viewPortTitleTop < 0) {
           $('.front-scroll').addClass("fade-in-active");
           $('.landing-page').css("z-index", "-1");
           $('.cd-label').css("color","rgb(130,130,130)");

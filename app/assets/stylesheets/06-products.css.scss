@@ -59,6 +59,7 @@ $break-smallest: 320px;
         ul {
           color: $dark;
           font-size: 1.3em;
+          font-weight: lighter;
           width: 25%;
           float: left;
           margin-left: 1em;
@@ -98,7 +99,7 @@ $break-smallest: 320px;
           p {
             color: $dark;
             font-size: 1.6em;
-            font-weight: lighter;
+            font-weight: 500;
             margin-top: 0;
             @media screen and (max-width: $break-large) {
               font-size: 1.2em;
@@ -207,6 +208,13 @@ $break-smallest: 320px;
         }
         @media screen and (max-width: 380px) {
           top: 16%;
+        }
+      }
+
+      .products-container {
+        display: none;
+        &.active {
+          display: block;
         }
       }
     }
