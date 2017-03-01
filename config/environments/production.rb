@@ -31,7 +31,8 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.serve_static_assets = true
-  config.static_cache_control = "public, max-age=31536000"
+  # config.static_cache_control = "public, max-age=31536000"
+  config.public_file_server.headers = { 'Cache-Control' => 'public, max-age=31536000' }
 
   config.action_controller.asset_host = 'https://guarded-earth-80900.herokuapp.com/'
   # Specifies the header that your server uses for sending files.
