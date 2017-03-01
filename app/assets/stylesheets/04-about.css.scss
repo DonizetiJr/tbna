@@ -1,0 +1,51 @@
+$dark: rgb(130,130,130);
+$light: #fcfcfc;
+$blue: #00b9f1;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-large: 1600px;
+
+$break-medium: 960px;
+$break-small: 620px;
+$break-smallest: 320px;
+
+
+.birds-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .1;
+  top: 7%;
+}
+
+.about {
+  position: relative;
+  hr {
+    width: 10%;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid rgba($dark, .16);
+    margin: 2em auto;
+  }
+}
+
+.text-about {
+  background-color: $white;
+  color: $dark;
+  font-size: 1.8em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 10% 20%;
+  @media screen and (max width: $break-large) {
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: $break-medium) {
+    margin: 5% 18%;
+  }
+  @media screen and (max-width: $break-small) {
+    font-size: 1.5em;
+    margin: 5% 15%;
+  }
+
+}

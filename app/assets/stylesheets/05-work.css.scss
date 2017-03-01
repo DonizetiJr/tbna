@@ -1,0 +1,205 @@
+$dark: rgb(130,130,130);
+$light: #fcfcfc;
+$blue: #00b9f1;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-large: 1600px;
+
+$break-medium: 960px;
+$break-small: 620px;
+$break-smallest: 320px;
+
+.work {
+
+  margin-top: 10em;
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 75%;
+  }
+  .letter-t {
+    color: rgba($blue, .3);
+    font-size: 105em;
+    font-weight: bold;
+    position: absolute;
+    left: -15%;
+    top: -8%;
+    z-index: 10;
+    @media screen and (max-width: $break-large) {
+      top: -12%;
+      font-size: 90em;
+    }
+    @media screen and (max-width: 1200px) {
+      left: -35%;
+      top: 5%;
+    }
+    @media screen and (max-width: $break-medium) {
+      font-size: 78em;
+    }
+    @media screen and (max-width: $break-small) {
+      font-size: 56em;
+      left: -40%;
+      top: 23%;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 52em;
+      left: -63%;
+      top: 13%;
+    }
+    @media screen and (max-width: $break-smallest) {
+      font-size: 43em;
+      top: 14%;
+    }
+  }
+  .work-content {
+    margin: 6% 20% 2% 20%;
+    height: 80%;
+    box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
+    position: relative;
+    @media screen and (max-width: $break-medium) {
+      margin: 5% 10%;
+      height: 70%;
+    }
+    @media screen and (max-width: $break-small) {
+      margin: 10% 5%;
+      box-shadow: none;
+    }
+    .container-stick {
+      background-color: transparent;
+      opacity: 1;
+      position: absolute;
+      right: -6em;
+      top: -6em;
+      width: 40px;
+      z-index: 2;
+      @media screen and (max-width: $break-small) {
+        padding: 0;
+        right: -1em;
+        top: -1em;
+      }
+      .stick {
+        height: 4px;
+      }
+    }
+    .work-desc {
+      background: $blue;
+      position: absolute;
+      width: 35%;
+      height: 62%;
+      margin-left: -5em;
+      top: 25%;
+      padding: 1.2em;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      z-index: 2;
+      transform: translate3d(0px, 17.2839%, 0px);
+      @media screen and (max-width: $break-large) {
+        height: auto;
+      }
+      @media screen and (max-width: $break-medium) {
+        height: 62%;
+        margin-left: -2em;
+      }
+      @media screen and (max-width: $break-small) {
+        width: 80%;
+        height: 45%;
+        margin-left: 10%;
+        top: 4%;
+        padding: 0;
+        border-radius: 2px;
+      }
+      p {
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        letter-spacing: .05em;
+        padding: .6em;
+        @media screen and (max-width: $break-large) {
+          font-size: 1.6em;
+        }
+        @media screen and (max-width: $break-small) {
+          font-size: 1.5em;
+          line-height: 1.3;
+          padding: .2em;
+        }
+      }
+    }
+    .work-text {
+      background-color: $white;
+      position: absolute;
+      height: 94%;
+      width: 70%;
+      bottom: 1em;
+      right: 1em;
+      z-index: 1;
+      @media screen and (max-width: $break-small) {
+        width: 105%;
+        margin-top: 4em;
+        left: -2.5%;
+        top: 40%;
+        height: 110%;
+      }
+      p {
+        color: $dark;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 1.3;
+        margin-left: 1em;
+        padding: .5em 1.5em;
+        @media screen and (max-width: $break-large) {
+          font-size: 1.2em;
+        }
+        @media screen and (max-width: $break-medium) {
+          padding: .2em .5em .2em 2.5em;
+        }
+        @media screen and (max-width: $break-small) {
+          padding: 1.1em;
+          font-size: 1.1em;
+        }
+        @media screen and (max-width: $break-smallest) {
+          font-size: 1em;
+        }
+        &:nth-child(1) {
+          @media screen and (max-width: $break-small) {
+            margin-top: 3em;
+          }
+        }
+        span {
+          font-size: 8em;
+          font-weight: bold;
+          color: #454961;
+          position: absolute;
+          top: -20%;
+          left: -8%;
+          z-index: 3;
+          &::before {
+            display: none;
+            content: '';
+            position: absolute;
+            height: 130px;
+            width: 17%;
+            top: 22%;
+            margin-top: -30px;
+            left: 42%;
+            z-index: -1;
+            background: #fff;
+            transform: rotate3d(0, 0, 1, 90deg) scale3d(1, 1, 1);
+            @media screen and (max-width: $break-small) {
+              display: none;
+            }
+          }
+          @media screen and (max-width: $break-large) {
+            left: -10%;
+          }
+          @media screen and (max-width: 1200px) {
+            top: -15%;
+            left: -13%;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 3em;
+            left: 0%;
+            top: 10%;
+          }
+        }
+      }
+    }
+  }
+}

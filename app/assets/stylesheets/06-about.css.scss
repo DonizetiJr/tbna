@@ -1,0 +1,214 @@
+$dark: rgb(130,130,130);
+$light: #fcfcfc;
+$blue: #00b9f1;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-large: 1600px;
+
+$break-medium: 960px;
+$break-small: 620px;
+$break-smallest: 320px;
+
+
+.products {
+
+  margin-top: 22%;
+  position: relative;
+  @media screen and (max-width: $break-small) {
+    margin-top: 55%;
+  }
+  @media screen and (max-width: $break-smallest) {
+    margin-top: 70%;
+  }
+
+  .products-content {
+    width: 100%;
+    background-color: $white;
+    .products-desc {
+      position: absolute;
+      transform: translate3d(0px, 34%, 0px);
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      &.central {
+        background-color: $light;
+        margin: 15%;
+        width: 70%;
+        margin-top: 5%;
+        z-index: 2;
+        box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
+        @media screen and (max-width: $break-medium) {
+          margin: 10%;
+          width: 80%;
+        }
+        @media screen and (max-width: $break-small) {
+          margin: 2%;
+          width: 96%;
+          height: auto;
+        }
+        h3 {
+          color: $dark;
+          font-size: 2.5em;
+          margin: 1em;
+          @media screen and (max-width: $break-large) {
+            font-size: 2.2em;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 2em;
+          }
+        }
+        ul {
+          color: $dark;
+          font-size: 1.3em;
+          width: 25%;
+          float: left;
+          margin-left: 1em;
+          line-height: 1.5em;
+          @media screen and (max-width: $break-large) {
+            font-size: 1.2em;
+          }
+          @media screen and (max-width: $break-small) {
+            width: auto;
+            float: none;
+            margin-left: 0;
+            padding: 0;
+            display: inline;
+          }
+          li {
+            @media screen and (max-width: $break-small) {
+              display: inline-block;
+              text-align: center;
+              margin:  0em 1em;
+              font-size: .8em;
+            }
+          }
+        }
+        .products-info {
+          width: 40%;
+          float: right;
+          line-height: 1.3;
+          padding: 0em 2em;
+          border-left: 5px solid rgb(96,73, 97);
+          border-radius: 5px;
+          margin-bottom: 5em;
+          @media screen and (max-width: $break-small) {
+            margin-top: 2em;
+            width: auto;
+            float: none;
+          }
+          p {
+            color: $dark;
+            font-size: 1.6em;
+            font-weight: 500;
+            margin-top: 0;
+            @media screen and (max-width: $break-large) {
+              font-size: 1.2em;
+            }
+            @media screen and (max-width: $break-small) {
+              font-size: 1.1em;
+            }
+          }
+        }
+        .arrow-left.icon, .arrow-right.icon {
+          bottom: 2em;
+          color: $dark;
+          position: absolute;
+          width: 16px;
+          height: 1px;
+          background-color: currentColor;
+          cursor: pointer;
+          &:hover {
+            color: $blue;
+            transform: scale(1.5,1.5);
+          }
+        }
+        .arrow-left.icon {
+          margin-left: 3px;
+          margin-top: 10px;
+          right: 5em;
+        }
+
+        .arrow-left.icon:before {
+          content: '';
+          position: absolute;
+          left: 1px;
+          top: -5px;
+          width: 10px;
+          height: 10px;
+          border-top: solid 1px currentColor;
+          border-right: solid 1px currentColor;
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+        .arrow-right.icon {
+          margin-left: 2px;
+          margin-top: 10px;
+          right: 3em;
+        }
+
+        .arrow-right.icon:before {
+          content: '';
+          position: absolute;
+          right: 1px;
+          top: -5px;
+          width: 10px;
+          height: 10px;
+          border-top: solid 1px currentColor;
+          border-right: solid 1px currentColor;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+      &.left, &.right {
+        position: absolute;
+        height: 10em;
+        width: 13.5%;
+        z-index: -1;
+      }
+      &.left {
+        background-color: $blue;
+        left: 14%;
+        top: 82%;
+        @media screen and (max-width: 1200px) {
+          top: 56%;
+        }
+        @media screen and (max-width: $break-medium) {
+          left: 8%;
+          top: 76%;
+        }
+        @media screen and (max-width: $break-small) {
+          left: 3%;
+          top: 55%;
+        }
+        @media screen and (max-width: 420px) {
+          top: 62%;
+        }
+        @media screen and (max-width: 380px) {
+          top: 70%;
+        }
+      }
+      &.right {
+        background-color: $white;
+        border: 8px solid $dark;
+        left: 72%;
+        top: 30%;
+        @media screen and (max-width: $break-large) {
+          top: 25%;
+        }
+        @media screen and (max-width: 1200px) {
+          top: 15%;
+        }
+        @media screen and (max-width: $break-medium) {
+          left: 77%;
+          top: 24%;
+        }
+        @media screen and (max-width: $break-small) {
+          left: 80%;
+          top: 14%;
+        }
+        @media screen and (max-width: 380px) {
+          top: 16%;
+        }
+      }
+    }
+  }
+}

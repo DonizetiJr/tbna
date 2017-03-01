@@ -1,12 +1,15 @@
-$dark: #454552;
-$light: #d8e9ef;
-// $blue: #6AAFE6;
+$dark: rgb(130,130,130);
+$light: #fcfcfc;
 $blue: #00b9f1;
 $highlight: #e85a71;
 $white: #fff;
 
+$break-large: 1600px;
+
 $break-medium: 960px;
 $break-small: 620px;
+$break-smallest: 320px;
+
 
 $stick_length: 16px; //Changes length of all sticks
 
@@ -107,5 +110,35 @@ section {
       -webkit-animation: rise 2s infinite;
       -moz-animation: rise 2s infinite;
     }
+  }
+}
+
+.title {
+  background-color: $white;
+  color: rgba(130,130,130,.95);
+  height: 2em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: .6em;
+  @media screen and (max-width: $break-large) {
+    font-size: 2.7em;
+  }
+  @media screen and (max-width: $break-small) {
+    font-size: 2.1em;
+  }
+}
+hr {
+  background-color: $white;
+  margin-top: -3.5em;
+  width: 5em;
+  border: 0;
+  border-top:
+  3px solid $blue;
+  border-radius: 10px;
+  margin-bottom: 3em;
+  @media screen and (max-width: $break-small) {
+    width: 4em;
+    margin-top: -2.5em;
   }
 }

@@ -1,0 +1,211 @@
+$dark: rgb(130,130,130);
+$light: #fcfcfc;
+$blue: #00b9f1;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-large: 1600px;
+
+$break-medium: 960px;
+$break-small: 620px;
+$break-smallest: 320px;
+
+
+.contact {
+  height: 90vh;
+  margin-top: 20vh;
+  @media screen and (max-width: $break-large) {
+    margin-top: 30vh;
+  }
+  @media screen and (max-width: $break-small) {
+    margin-top: 20vh;
+  }
+  .contact-background {
+    background-image: linear-gradient(to left, rgba($light, .8), rgba($light, .8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65%;
+    position: relative;
+    @media screen and (max-width: $break-small) {
+      height: auto;
+    }
+
+    .cow-img {
+      position: absolute;
+      height: auto;
+      width: 75%;
+      opacity: .4;
+      bottom: 0%;
+      @media screen and (max-width: $break-small) {
+        transform: scaleX(-1);
+        right: 0;
+      }
+    }
+    .contact-card {
+      background-color: $blue;
+      height: 85%;
+      width: 70%;
+      position: absolute;
+      bottom: -15%;
+      left: 15%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      @media screen and (max-width: $break-medium) {
+        width: 90%;
+        left: 6%;
+        bottom: -10%;
+      }
+      @media screen and (max-width: $break-small) {
+        width: auto;
+        position: static;
+        left: auto;
+      }
+      .contact-form {
+        float: left;
+        width: 35%;
+        height: 100%;
+        background-color: $white;
+        position: relative;
+        @media screen and (max-width: $break-small) {
+          float: none;
+          width: auto;
+        }
+
+        h3 {
+          color: $blue;
+          text-align: center;
+          font-size: 2em;
+          margin-top: 2.5em;
+          @media screen and (max-width: $break-large) {
+            font-size: 1.8em;
+          }
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+        }
+        .mail-solid {
+          font-size: 2em;
+          padding: .5em;
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+          &.icon {
+            color: $blue;
+            position: absolute;
+            margin-left: 42%;
+            margin-top: 8%;
+            width: 15px;
+            height: 10px;
+            border-radius: 5px;
+            border: solid 1px currentColor;
+            background-color: currentColor;
+            &:before, &:after {
+              content: '';
+              position: absolute;
+              left: 22px;
+              top: -12px;
+              width: 1px;
+              height: 28px;
+              color: white;
+              background-color: currentColor;
+              -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+            }
+            &:before {
+              -webkit-transform: rotate(-54deg);
+              transform: rotate(-54deg);
+            }
+
+            &:after {
+              -webkit-transform: rotate(54deg);
+              transform: rotate(54deg);
+            }
+          }
+        }
+        h4 {
+          color: $dark;
+          font-size: 1.3em;
+          font-weight: lighter;
+          text-align: center;
+          margin-top: 40%;
+          margin-bottom: 20%;
+          letter-spacing: 3px;
+          @media screen and (max-width: $break-large) {
+            font-size: 1.2em;
+          }
+          @media screen and (max-width: $break-medium) {
+            margin-top: 50%;
+          }
+          @media screen and (max-width: $break-small) {
+            margin-top: 30%;
+          }
+        }
+        p {
+          position: absolute;
+          bottom: 0;
+          margin-right: 1em;
+          right: 0;
+          font-weight: bold;
+          color: #c5c4c4;
+          @media screen and (max-width: $break-small) {
+            display: none;
+          }
+        }
+      }
+      .contact-info {
+        width: 65%;
+        height: 100%;
+        margin-left: 35%;
+        @media screen and (max-width: $break-small) {
+          width: auto;
+          margin-left: 0;
+        }
+        h3 {
+          color: $white;
+          font-size: 3em;
+          width: 70%;
+          margin-left: 2em;
+          letter-spacing: 3px;
+          @media screen and (max-width: $break-large) {
+            font-size: 2em;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 1.5em;
+            text-align: center;
+          }
+        }
+        ul {
+          color: $white;
+          line-height: 2.2;
+          font-weight: lighter;
+          font-size: 1.1em;
+          margin-left: 3em;
+          @media screen and (max-width: $break-large) {
+            font-size: .9em;
+          }
+          @media screen and (max-width: $break-small) {
+            margin-left: 1em;
+          }
+        }
+        .info-title {
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .footer {
+    p {
+      background-color: $white;
+      color: $dark;
+      font-size: .85em;
+      float: right;
+      margin: 10em 7em 0em 0em;
+      @media screen and (max-width: $break-small) {
+        margin: 5em 0em 2em 2em;
+        float: none;
+      }
+    }
+  }
+}
