@@ -1,13 +1,13 @@
 $dark: #454552;
 $light: #d8e9ef;
-$blue: #6AAFE6;
+// $blue: #6AAFE6;
+$blue: #00b9f1;
 $highlight: #e85a71;
 $white: #fff;
 
 $break-medium: 960px;
 $break-small: 620px;
 
-$stick_color: #6AAFE6;
 $stick_length: 16px; //Changes length of all sticks
 
 
@@ -85,7 +85,7 @@ section {
     margin-left: 10%;
     height:5px;
     border-radius: 10px;
-    background:rgba($stick_color, 0.6);
+    background:rgba($blue, 0.6);
     &:nth-child(n) {
       transform:rotate(30deg);
       -ms-transform:rotate(30deg); /* IE 9 */

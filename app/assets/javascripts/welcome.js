@@ -83,10 +83,7 @@ $( window ).ready(function() {
       var productsPosition = ($('#products').offset().top - $(window).scrollTop());
       var aboutPosition = $('#about').offset().top - $(window).scrollTop();
 
-      if (aboutPosition < 650 && aboutPosition > -650) {
-        $('.birds-img').css("height", ((aboutPosition/6.5))+"%");
-        $('.birds-img').css("width", ((aboutPosition/6.5))+"%");
-      } else if (workPosition < 520 && workPosition > -520) {
+      if (workPosition < 520 && workPosition > -520) {
         $('.work-desc').css("transform", "translate3d(0px, "+ workPosition/30 +"%, 0px)")
       } else if (productsPosition < 850 && productsPosition > -850) {
         $('.products-desc').css("transform", "translate3d(0px, "+ productsPosition/25 +"%, 0px)")
