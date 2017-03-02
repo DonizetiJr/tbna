@@ -59,6 +59,7 @@ ul {
 section {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   @media screen and (min-width: $break-small) {
     height: 70vh;
   }
