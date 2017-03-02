@@ -11,10 +11,20 @@ $break-small: 620px;
 $break-smallest: 320px;
 
 .work {
-
+  background: #DAE2F8; /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
+  background-image: -o-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
+  background-image: -moz-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
+  background-image: linear-gradient(-141deg, #4a148c  0, #aa00ff 27%, #d500f9 52%, #e040fb 73%, #ea80fc 100%);
+  height: 100vh;
+  padding-top: 2%;
   margin-top: 10em;
   @media screen and (max-width: $break-small) {
     margin-bottom: 75%;
+  }
+  .title {
+    background-color: transparent;
+    color: $white;
   }
   .letter-t {
     color: rgba($blue, .3);
@@ -52,7 +62,8 @@ $break-smallest: 320px;
   }
   .work-content {
     margin: 6% 20% 2% 20%;
-    height: 80%;
+    height: 60%;
+    background-color: $white;
     box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
     position: relative;
     @media screen and (max-width: $break-medium) {

@@ -62,9 +62,8 @@ $( window ).ready(function() {
 
         var title = $(".landing-title").offset();
         var viewPortTitleTop = title.top - $(document).scrollTop() - 150;
-        var contactPosition = $('#contact').offset().top - $(window).scrollTop();
 
-        if (contactPosition < 390) {
+        if (viewPortTitleTop < -3400 || (viewPortTitleTop < -1300 && viewPortTitleTop > -2200)) {
           $('.cd-label').css("color","#fff");
 
         } else if (viewPortTitleTop < 0) {
