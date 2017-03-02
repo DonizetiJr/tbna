@@ -88,7 +88,7 @@ $break-smallest: 320px;
           float: right;
           line-height: 1.3;
           padding: 0em 2em;
-          border-left: 5px solid rgb(96,73, 97);
+          border-left: 5px solid rgb(126,35,202);
           border-radius: 5px;
           margin-bottom: 5em;
           @media screen and (max-width: $break-small) {
@@ -109,55 +109,43 @@ $break-smallest: 320px;
             }
           }
         }
-        .arrow-left.icon, .arrow-right.icon {
-          bottom: 2em;
+        .carousel-indicators {
           color: $dark;
           position: absolute;
-          width: 16px;
-          height: 1px;
-          background-color: currentColor;
+          bottom: 1em;
+          right: 2%;
           cursor: pointer;
-          &:hover {
-            color: $blue;
-            transform: scale(1.5,1.5);
+          text-align: center;
+          list-style: none;
+          @media screen and (max-width: $break-medium) {
+            right: 43%;
+          }
+          li {
+            display: inline-block;
+            border-radius: 10px;
+            width: 12px;
+            height: 12px;
+            background-color: $dark;
+            box-sizing: content-box;
+            margin: 3px;
+            vertical-align: middle;
+            border: 0;
+            &:hover {
+              color: $blue;
+              transform: scale(1.5,1.5);
+            }
+            &.active {
+              width: 12px;
+              height: 12px;
+              background-clip: padding-box;
+              background-color: $blue;
+              border: 3px solid transparent;
+              margin: 0;
+              box-shadow: 0 0 0 1px $blue;
+            }
           }
         }
-        .arrow-left.icon {
-          margin-left: 3px;
-          margin-top: 10px;
-          right: 5em;
-        }
 
-        .arrow-left.icon:before {
-          content: '';
-          position: absolute;
-          left: 1px;
-          top: -5px;
-          width: 10px;
-          height: 10px;
-          border-top: solid 1px currentColor;
-          border-right: solid 1px currentColor;
-          -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-        }
-        .arrow-right.icon {
-          margin-left: 2px;
-          margin-top: 10px;
-          right: 3em;
-        }
-
-        .arrow-right.icon:before {
-          content: '';
-          position: absolute;
-          right: 1px;
-          top: -5px;
-          width: 10px;
-          height: 10px;
-          border-top: solid 1px currentColor;
-          border-right: solid 1px currentColor;
-          -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-        }
       }
       &.left, &.right {
         position: absolute;

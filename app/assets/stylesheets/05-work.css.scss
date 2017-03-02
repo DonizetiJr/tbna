@@ -11,6 +11,7 @@ $break-small: 620px;
 $break-smallest: 320px;
 
 .work {
+  position: relative;
   background: #DAE2F8; /* fallback for old browsers */
   background-image: -webkit-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
   background-image: -o-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
@@ -23,12 +24,33 @@ $break-smallest: 320px;
     height: 60em;
     margin-bottom: 75%;
   }
+
+  .circle-left, .circle-right {
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .circle-left {
+    top: 1em;
+    right: 4em;
+
+    -webkit-animation: bubbleStart 11s infinite; /* Safari 4.0 - 8.0 */
+    animation: bubbleStart 11s infinite;
+  }
+  .circle-right {
+    bottom: -5em;
+    left: -6em;
+
+    -webkit-animation: bubbleEnd 11s infinite; /* Safari 4.0 - 8.0 */
+    animation: bubbleEnd 11s infinite;
+  }
+
   .title {
     background-color: transparent;
     color: $white;
   }
   hr {
-    border-top: 3px solid $white; 
+    border-top: 3px solid $white;
   }
   .letter-t {
     color: rgba($blue, .3);
