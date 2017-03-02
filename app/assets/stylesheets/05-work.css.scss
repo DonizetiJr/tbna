@@ -20,6 +20,7 @@ $break-smallest: 320px;
   padding-top: 2%;
   margin-top: 10em;
   @media screen and (max-width: $break-small) {
+    height: 60em;
     margin-bottom: 75%;
   }
   .title {
@@ -46,6 +47,7 @@ $break-smallest: 320px;
       font-size: 78em;
     }
     @media screen and (max-width: $break-small) {
+      display: none;
       font-size: 56em;
       left: -40%;
       top: 23%;
@@ -61,16 +63,18 @@ $break-smallest: 320px;
     }
   }
   .work-content {
+    background-color: $white;
     margin: 6% 20% 2% 20%;
     height: 60%;
-    background-color: $white;
     box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
     position: relative;
     @media screen and (max-width: $break-medium) {
+      background-color: transparent;
       margin: 5% 10%;
       height: 70%;
     }
     @media screen and (max-width: $break-small) {
+      height: 50%;
       margin: 10% 5%;
       box-shadow: none;
     }
@@ -110,9 +114,9 @@ $break-smallest: 320px;
         margin-left: -2em;
       }
       @media screen and (max-width: $break-small) {
-        width: 80%;
+        width: 85%;
         height: 45%;
-        margin-left: 10%;
+        margin-left: 7.5%;
         top: 4%;
         padding: 0;
         border-radius: 2px;
@@ -145,7 +149,7 @@ $break-smallest: 320px;
         width: 105%;
         margin-top: 4em;
         left: -2.5%;
-        top: 40%;
+        top: 25%;
         height: 110%;
       }
       p {
@@ -170,13 +174,15 @@ $break-smallest: 320px;
         }
         &:nth-child(1) {
           @media screen and (max-width: $break-small) {
-            margin-top: 3em;
+            margin-top: 4em;
           }
         }
         span {
           font-size: 8em;
           font-weight: bold;
-          color: #454961;
+          background: linear-gradient(-141deg, #4a148c  0, #aa00ff 27%, #d500f9 52%, #e040fb 73%, #ea80fc 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           position: absolute;
           top: -20%;
           left: -8%;
@@ -207,7 +213,7 @@ $break-smallest: 320px;
           @media screen and (max-width: $break-small) {
             font-size: 3em;
             left: 0%;
-            top: 10%;
+            top: 12%;
           }
         }
       }
