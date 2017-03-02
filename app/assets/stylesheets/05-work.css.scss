@@ -15,7 +15,7 @@ $break-smallest: 320px;
   background-image: -webkit-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
   background-image: -o-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
   background-image: -moz-linear-gradient(141deg, #1976d2 0, #1e88e5 27%, #2196f3 52%, #1565c0 73%, #0d47a1 100%);
-  background-image: linear-gradient(-141deg, #4a148c  0, #aa00ff 27%, #d500f9 52%, #e040fb 73%, #ea80fc 100%);
+  background-image: linear-gradient(-141deg, #7e23cb 0, #9228b6 27%, #b939a9 52%, #ae2f7f 73%, #d03c83 100%);
   height: 100vh;
   padding-top: 2%;
   margin-top: 10em;
@@ -26,6 +26,9 @@ $break-smallest: 320px;
   .title {
     background-color: transparent;
     color: $white;
+  }
+  hr {
+    border-top: 3px solid $white; 
   }
   .letter-t {
     color: rgba($blue, .3);
@@ -180,7 +183,7 @@ $break-smallest: 320px;
         span {
           font-size: 8em;
           font-weight: bold;
-          background: linear-gradient(-141deg, #4a148c  0, #aa00ff 27%, #d500f9 52%, #e040fb 73%, #ea80fc 100%);
+          background: linear-gradient(-141deg, #7e23cb 0, #9228b6 27%, #b939a9 52%, #ae2f7f 73%, #d03c83 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           position: absolute;

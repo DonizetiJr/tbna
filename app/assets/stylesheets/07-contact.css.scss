@@ -29,6 +29,9 @@ $break-smallest: 320px;
     color: $white;
     background-color: transparent;
   }
+  hr {
+    border-top: 3px solid $white;
+  }
   .contact-background {
     height: 65%;
     position: relative;
