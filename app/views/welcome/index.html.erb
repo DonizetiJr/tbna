@@ -192,7 +192,7 @@
         <div class="contact-form-open">
 
           <%= form_for @contact do |f| %>
-            <%= f.label :name %> <br>
+            <%= f.label :nome %> <br>
             <%= f.text_field :name, required: true %>
 
             <br>
@@ -202,7 +202,7 @@
 
             <br>
 
-            <%= f.label :message %> <br>
+            <%= f.label :mensagem %> <br>
             <%= f.text_area :message, as: :text %>
 
             <div class="hidden">
@@ -210,7 +210,6 @@
             </div>
 
             <%= f.submit 'Enviar Mensagem'%>
-
 
             <button type="button" class="form-close">Cancelar</button>
           <% end %>
