@@ -37,6 +37,7 @@ $break-smallest: 320px;
         margin-top: 5%;
         z-index: 2;
         box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
+        overflow: hidden;
         @media screen and (max-width: $break-medium) {
           margin: 10%;
           width: 80%;

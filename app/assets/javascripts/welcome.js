@@ -11,32 +11,10 @@ $( window ).ready(function() {
     $('.cd-nav').removeClass("cd-vertical-nav").addClass("menu-trigger");
   }
 
-  // ------------------- Dots Carousel ---------------------//
-
-  $('.carousel-indicators > li').click(function() {
-    const id = this.id;
-    const desc = $('.products-desc');
-    const nextProduct = $(desc).parent().find('div.' + id);
-
-    $('.carousel-indicators').parent().find('li.active').removeClass('active');
-    $(this).addClass('active');
-
-    $(desc).parent().find('div.active').removeClass('active');
-    $(nextProduct).addClass('active animated slideInUp');
-    $(nextProduct).one(
-      "webkitAnimationEnd oanimationend msAnimationEnd animationend",
-      function() {
-        $(this).removeClass("animated fadeInRight");
-      }
-    );
-  })
-
   // ---------------- Landing page affects ---------------- //
 
 
   window.onscroll = function () {
-
-    // Start Effects
 
     var temp = false;
 
@@ -100,7 +78,7 @@ $( window ).ready(function() {
       }
     }
 
-    // Floating Divs
+    // ------------------- Floating Divs ------------------- //
 
     var workPosition = ($('#work').offset().top - $(window).scrollTop());
     var productsPosition = ($('#products').offset().top - $(window).scrollTop());
@@ -119,9 +97,28 @@ $( window ).ready(function() {
     $(".cd-list").addClass("animated fadeOutRight");
   });
 
+  // ------------------- Dots Carousel ---------------------//
 
+  $('.carousel-indicators > li').click(function() {
+    const id = this.id;
+    const desc = $('.products-desc');
+    const nextProduct = $(desc).parent().find('div.' + id);
 
-  // Navbar scroll
+    $('.carousel-indicators').parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+
+    $(desc).parent().find('div.active').removeClass('active');
+    $(nextProduct).addClass('active animated slideInUp');
+    $(nextProduct).one(
+      "webkitAnimationEnd oanimationend msAnimationEnd animationend",
+      function() {
+        $(this).removeClass("animated slideUp");
+      }
+    );
+  })
+
+  // ------------------- Navbar scroll ------------------- //
+
   var contentSections = $('.cd-section'),
   navigationItems = $('.cd-label');
 
@@ -165,7 +162,7 @@ $( window ).ready(function() {
     });
   }
 
-  // Menu icon
+  // ------------------- Menu icon ------------------- //
 
   $(".menu-icon").click(function() {
     $(this).toggleClass("cross");
