@@ -17,6 +17,7 @@ $break-smallest: 320px;
   position: relative;
   overflow: initial;
   @media screen and (max-width: $break-small) {
+    margin-top: 0;
     margin-top: 30%;
   }
   @media screen and (max-width: $break-smallest) {
@@ -30,6 +31,9 @@ $break-smallest: 320px;
       position: absolute;
       transform: translate3d(0px, 34%, 0px);
       box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      @media screen and (max-width: $break-small) {
+        box-shadow: none;
+      }
       &.central {
         background-color: $light;
         margin: 15%;
@@ -43,8 +47,10 @@ $break-smallest: 320px;
           width: 80%;
         }
         @media screen and (max-width: $break-small) {
-          margin: 2%;
-          width: 96%;
+          background-color: $white;
+          box-shadow: none;
+          margin: auto;
+          width: auto;
           height: auto;
         }
         h3 {
@@ -101,7 +107,7 @@ $break-smallest: 320px;
           p {
             color: $dark;
             font-size: 1.6em;
-            font-weight: 500;
+            font-weight: lighter;
             margin-top: 0;
             @media screen and (max-width: $break-large) {
               font-size: 1.2em;
@@ -154,6 +160,9 @@ $break-smallest: 320px;
         height: 10em;
         width: 13.5%;
         z-index: -1;
+        @media screen and (max-width: $break-small) {
+          display: none;
+        }
       }
       &.left {
         background-color: $blue;
@@ -202,6 +211,7 @@ $break-smallest: 320px;
       }
 
       .products-container {
+        padding:  3em;
         display: none;
         &.active {
           display: block;
