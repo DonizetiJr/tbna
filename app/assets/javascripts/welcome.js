@@ -108,11 +108,15 @@ $( window ).ready(function() {
     $(this).addClass('active');
 
     $(desc).parent().find('div.active').removeClass('active');
-    $(nextProduct).addClass('active animated slideInUp');
+    if (width >= 960) {
+      $(nextProduct).addClass('active animated slideInUp');
+    } else {
+      $(nextProduct).addClass('active animated fadeInRight');
+    }
     $(nextProduct).one(
       "webkitAnimationEnd oanimationend msAnimationEnd animationend",
       function() {
-        $(this).removeClass("animated slideUp");
+        $(this).removeClass("animated slideUp fadeInRight");
       }
     );
   })
