@@ -1,0 +1,78 @@
+$dark: #a09f9f;
+$light: #fcfcfc;
+$blue: #00b9f1;
+$highlight: #e85a71;
+$white: #fff;
+
+$break-large: 1600px;
+$break-medium: 960px;
+$break-small: 620px;
+$break-smallest: 320px;
+
+form {
+  padding: 3.5em;
+
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  label {
+    color: $blue;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: .5em;
+  }
+  input, textarea {
+    margin: 1.5em 0em 1.5em 0em;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-size: 1em;
+    font-weight: bold;
+    color: $dark;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    width: 80%;
+    height: 1.5em;
+    padding: .5em;
+    margin: .5em 0 1em 0;
+
+    transition: border .5s linear;
+    &:focus {
+      outline: transparent;
+      border-bottom: 1px solid $blue;
+    }
+  }
+  textarea {
+    height: 6em;
+  }
+  input[type="submit"], .form-close {
+    outline: none;
+    background-color: $blue; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, $blue , #0ED2F7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, $blue , #0ED2F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: .8em 1.6em;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+    transition: all .8s linear;
+    &:hover {
+      border-radius: 0px;
+    }
+    @media screen and (max-width: $break-small) {
+      float: left;
+      font-size: 1em;
+    }
+  }
+  .form-close {
+    background: $light;
+    color: $dark;
+    margin-left: 1em;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+  }
+}

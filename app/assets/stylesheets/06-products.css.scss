@@ -1,4 +1,4 @@
-$dark: rgb(130,130,130);
+$dark: #a09f9f;
 $light: #fcfcfc;
 $blue: #00b9f1;
 $highlight: #e85a71;
@@ -35,7 +35,7 @@ $break-smallest: 320px;
         box-shadow: none;
       }
       &.central {
-        background-color: $light;
+        background-color: $white;
         margin: 15%;
         width: 70%;
         margin-top: 5%;
@@ -47,7 +47,6 @@ $break-smallest: 320px;
           width: 80%;
         }
         @media screen and (max-width: $break-small) {
-          background-color: $white;
           box-shadow: none;
           margin: auto;
           width: auto;

@@ -184,4 +184,34 @@ $( window ).ready(function() {
     }
   });
 
+  // ------------------- Contact Form ------------------- //
+
+  const form = $('.contact-form');
+
+  $('.mail-solid').click(function() {
+    $('.contact-form-open').removeClass("animated fadeOut");
+    $('.contact-info').css("display", "none");
+    $('.contact-form-info').addClass("animated fadeOut");
+    $(form).removeClass("close").addClass("open");
+
+    setTimeout(function() {
+      $('.contact-form-info').css("display", "none");
+      $('.contact-form-info').removeClass("animated fadeOut");
+
+    }, 800);
+  })
+
+  $('.form-close').click(function() {
+    $('.contact-form-open').addClass("animated fadeOut");
+    setTimeout(function() {
+      $(form).removeClass("open").addClass("close");
+    }, 300);
+
+    setTimeout(function() {
+      $('.contact-info').css("display", "block");
+      $('.contact-form-info').css("display", "block");
+    }, 1100);
+
+
+  })
 });

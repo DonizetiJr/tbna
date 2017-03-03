@@ -17,6 +17,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'inline_svg'
 gem 'actionpack-page_caching'
+gem 'mail_form'
 
 group :development, :test do
   gem 'byebug', platform: :mri

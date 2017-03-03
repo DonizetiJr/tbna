@@ -179,12 +179,42 @@
     <%= inline_svg "cow.svg", class:"cow-img" %>
 
     <div class="contact-card">
-      <div class="contact-form">
-        <h3>Contate-nos</h3>
-        <div class="mail-solid icon"></div>
-        <h4>Clique para escrever</h4>
-        <div class="arrow-down"></div>
-        <p>email@gmail.com</p>
+
+      <div class="contact-form close">
+        <div class="contact-form-info">
+          <h3>Contate-nos</h3>
+          <div class="mail-solid icon"></div>
+          <h4>Clique para escrever</h4>
+          <div class="arrow-down"></div>
+          <p>email@gmail.com</p>
+        </div>
+
+        <div class="contact-form-open">
+
+          <%= form_for @contact do |f| %>
+            <%= f.label :name %> <br>
+            <%= f.text_field :name, required: true %>
+
+            <br>
+
+            <%= f.label :email %> <br>
+            <%= f.email_field :email, required: true %>
+
+            <br>
+
+            <%= f.label :message %> <br>
+            <%= f.text_area :message, as: :text %>
+
+            <div class="hidden">
+              <%= f.label :nickname, hint: 'deixe o campo em branco' %>
+            </div>
+
+            <%= f.submit 'Enviar Mensagem'%>
+
+
+            <button type="button" class="form-close">Cancelar</button>
+          <% end %>
+        </div>
       </div>
 
       <div class="contact-info">
