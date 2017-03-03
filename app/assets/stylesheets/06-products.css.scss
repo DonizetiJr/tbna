@@ -13,13 +13,14 @@ $break-smallest: 320px;
 
 .products {
 
-  margin-top: 10%;
+  margin-top: 8%;
   position: relative;
+  overflow: initial;
   @media screen and (max-width: $break-small) {
-    margin-top: 55%;
+    margin-top: 30%;
   }
   @media screen and (max-width: $break-smallest) {
-    margin-top: 70%;
+    margin-top: 40%;
   }
 
   .products-content {
@@ -88,7 +89,7 @@ $break-smallest: 320px;
           float: right;
           line-height: 1.3;
           padding: 0em 2em;
-          border-left: 5px solid rgb(126,35,202);
+          border-left: 5px solid #61a5b4;
           border-radius: 5px;
           margin-bottom: 5em;
           @media screen and (max-width: $break-small) {

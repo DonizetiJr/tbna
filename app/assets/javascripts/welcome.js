@@ -110,7 +110,7 @@ $( window ).ready(function() {
       $('.work-desc').css("transform", "translate3d(0px, "+ workPosition/20 +"%, 0px)")
     } else if (productsPosition < 850 && productsPosition > -850) {
       $('.products-desc').css("transform", "translate3d(0px, "+ productsPosition/25 +"%, 0px)")
-      $('.products-info').css("border-left", " 5px solid rgba(126,35,202, "+ Math.abs(Math.abs(productsPosition/450) - 1) +")");
+      $('.products-info').css("border-left", " 5px solid rgba(94,159,173, "+ Math.abs(Math.abs(productsPosition/450) - 1) +")");
     }
   }
 
