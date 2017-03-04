@@ -191,7 +191,7 @@
 
         <div class="contact-form-open">
 
-          <%= form_for @contact do |f| %>
+          <%= form_for @contact, remote: true do |f| %>
             <%= f.label :nome %> <br>
             <%= f.text_field :name, required: true %>
 
@@ -209,11 +209,12 @@
               <%= f.label :nickname, hint: 'deixe o campo em branco' %>
             </div>
 
-            <%= f.submit 'Enviar Mensagem'%>
+            <%= f.button 'Enviar Mensagem', class: "button", data: {disable_with: "Enviando..."}%>
 
             <button type="button" class="form-close">Cancelar</button>
           <% end %>
         </div>
+
       </div>
 
       <div class="contact-info">
@@ -233,3 +234,7 @@
   </div>
 
 </section>
+
+<div class="email_confirmation">
+  <p>Retornaremos em breve!</p>
+</div>
