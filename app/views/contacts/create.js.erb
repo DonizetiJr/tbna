@@ -1,14 +1,17 @@
+const width = $(window).width();
 const form = $('.contact-form');
 
-$('.contact-form-open').addClass("animated fadeOut");
-setTimeout(function() {
-  $(form).removeClass("open").addClass("close");
-}, 300);
+if (width >= 960) {
+  $('.contact-form-open').addClass("animated fadeOut");
+  setTimeout(function() {
+    $(form).removeClass("open").addClass("close");
+  }, 300);
 
-setTimeout(function() {
-  $('.contact-info').css("display", "block");
-  $('.contact-form-info').css("display", "block");
-}, 1100);
+  setTimeout(function() {
+    $('.contact-info').css("display", "block");
+    $('.contact-form-info').css("display", "block");
+  }, 1100);
+}
 
 $(".email_confirmation").addClass("active");
 setTimeout(function() {

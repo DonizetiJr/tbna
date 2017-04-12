@@ -86,11 +86,14 @@ form {
   bottom: 1%;
   left: 42%;
   z-index: 999;
-  box-shadow: 0 50px 80px 0 rgba(0,0,0,.2);
 
   transform: translateY(120%);
 
   transition: all .5s ease-in-out;
+  @media screen and (max-width: $break-small) {
+    width: 60%;
+    left: 4%;
+  }
   &.email_confirmation.active {
     transform: translateY(0%);
 
